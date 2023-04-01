@@ -5,7 +5,8 @@
     "description": "The life of an ai is its memory,So, I concretize the life of ai",
     "permissions": [
         "activeTab",
-        "https://chat.openai.com/chat/*"
+        "https://chat.openai.com/chat/*",
+        "tabs"
     ],
     "background": {
         "scripts": [
@@ -16,7 +17,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://chat.openai.com/chat/*"
+                "https://chat.openai.com/chat/*",
+                "<all_urls>"
             ],
             "js": [
                 "content.js"
