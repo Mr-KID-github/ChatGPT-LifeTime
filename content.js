@@ -51,7 +51,7 @@ function ReadLifeTime(params) {
 
 
 // 设置动态更新的时间间隔
-const INTERVAL = 5;
+const INTERVAL = 10;
 let currentCount = 0;
 
 // 设置逐步增加/减少字数和进度条的函数
