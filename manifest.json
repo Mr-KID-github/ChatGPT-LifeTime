@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Chat GPT Life With Menory",
+    "version": "1.0",
+    "description": "The life of an ai is its memory,So, I concretize the life of ai",
+    "permissions": [
+        "activeTab",
+        "https://chat.openai.com/chat/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://chat.openai.com/chat/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
