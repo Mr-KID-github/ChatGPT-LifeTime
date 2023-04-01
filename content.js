@@ -83,7 +83,11 @@ window.addEventListener('load', () => {
             // 如果初始化已经完成，则监听内容变化，动态更新字数和进度条
             console.log("监听到内容发生变化")
             console.log(data)
-            UpdateLifeTime();
+            // 动态更新字数和进度条
+            setTimeout(function name(params) {
+                wordCount = 0
+                ReadLifeTime();
+            }, 2000)
         });
 
         // 配置MutationObserver监视页面的聊天框元素
@@ -107,13 +111,4 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
     }
 });
-
-function UpdateLifeTime(params) {
-    console.log("执行UpdateLifeTime")
-    if (ChatElement_length != ChatElement.children.length) {
-        ReadLifeTime()
-        ChatElement_length = ChatElement.children.length
-    }
-}
-
 
