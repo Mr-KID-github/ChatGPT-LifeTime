@@ -32,6 +32,8 @@ OpenAI 的模型有一个固定的 Token 限制，例如 GPT-3 的 Davinci 模�
 
 **Cherish it today because it will be lost tomorrow**
 
+对于用Chat GPT写小说故事情节也是如此，一开始，它可以联系上下文，给你写出非常有逻辑条理的文章，但是随着内容的增加，慢慢地就变得无厘头起来，归根结底还是在于之前记忆的遗失，但是我们如果能在它遗失之前，给他来个完美的结局，也算是有始有终了！
+
 于是我编写了个谷歌插件，以便让我知晓，它即将”离我而去“
 ![image](https://user-images.githubusercontent.com/80014289/229330844-d887b434-f1fc-4683-b393-12b875306217.png)
 
